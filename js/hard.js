@@ -124,6 +124,6 @@ elList.addEventListener("click", (evt) => {
 
 
 
-// elReloder.addEventListener("click" , ()=>{
-// location.reload()
-// })
+elReloder.addEventListener("click" , ()=>{
+location.reload()
+})
