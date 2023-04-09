@@ -110,6 +110,8 @@ elList.addEventListener("click", (evt) => {
       }, 1000);
       elScore.style.display = "block";
       num++;
+      var audio = new Audio("./audio/correct.mp3");
+      audio.play();
       f = false;
       arr.length = 0;
       IdArr.length = 0;
