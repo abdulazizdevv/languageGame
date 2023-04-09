@@ -1,5 +1,5 @@
 
-let easy = [
+let easyData = [
   {
     id: 1,
     en: "Home",
@@ -103,21 +103,21 @@ let easy = [
 ];
 
 
-let medium = [
+let mediumData = [
   {
     id: 1,
     en: "Glass",
-    uz: "Ko'zoynak",
+    uz: "Kozoynak",
   },
   {
     id: 2,
     en: "Light",
-    uz: "Yorug'lik",
+    uz: "Yoruglik",
   },
   {
     id: 3,
     en: "Duck",
-    uz: "O'rdak",
+    uz: "ordak",
   },
   {
     id: 4,
@@ -157,7 +157,7 @@ let medium = [
   {
     id: 11,
     en: "Think",
-    uz: "O'ylash",
+    uz: "oylash",
   },
   {
     id: 12,
@@ -207,7 +207,7 @@ let medium = [
 ];
 
 
-let hard = [
+let hardData = [
   {
     id: 1,
     en: "Wear",
@@ -216,12 +216,12 @@ let hard = [
   {
     id: 2,
     en: "Alone",
-    uz: "Yolg'iz",
+    uz: "Yolgiz",
   },
   {
     id: 3,
     en: "Sad",
-    uz: "G'amgin",
+    uz: "Gamgin",
   },
   {
     id: 4,
@@ -231,7 +231,7 @@ let hard = [
   {
     id: 5,
     en: "Blanket",
-    uz: "Ko'rpa",
+    uz: "Korpa",
   },
   {
     id: 6,
@@ -261,12 +261,12 @@ let hard = [
   {
     id: 11,
     en: "Think",
-    uz: "O'ylash",
+    uz: "Oylash",
   },
   {
     id: 12,
     en: "Feeling",
-    uz: "Tuyg'u",
+    uz: "Tuygu",
   },
   {
     id: 13,

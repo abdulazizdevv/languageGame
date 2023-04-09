@@ -67,13 +67,13 @@ let res = [];
 elStarter.addEventListener("click" , (evt) =>{
   evt.preventDefault()
   elStarter.classList.add("dn")
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 10; i++) {
     n.push(Math.floor(Math.random() * 20) + 1);
   }
   for (let i = 0; i < n.length; i++) {
-    newArrs.push(easy[n[i]]);
+    newArrs.push(hardData[n[i]]);
   }
-  Myfunc(hard, elList);
+  Myfunc(newArrs, elList);
   const myTimeout = setTimeout(myGreeting, 10000);
   function myGreeting() {
     Myfunc(res, elList);
@@ -85,13 +85,14 @@ elStarter.addEventListener("click" , (evt) =>{
   }
 })
 let IdArr = [];
+console.log(hardData);
 let ids =0
 elScore.style.display = "none";
 let num = 0;
 elList.addEventListener("click", (evt) => {
   evt.preventDefault();
   let elId = "";
-  easy.forEach((el, i) => {
+  hardData.forEach((el, i) => {
     if (evt.target.matches(`.${el.en}`)) {
       f = true;
       IdArr.push(evt.target.getAttribute("id"));
@@ -123,6 +124,6 @@ elList.addEventListener("click", (evt) => {
 
 
 
-elReloder.addEventListener("click" , ()=>{
-location.reload()
-})
+// elReloder.addEventListener("click" , ()=>{
+// location.reload()
+// })

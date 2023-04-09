@@ -71,7 +71,7 @@ elStarter.addEventListener("click" , (evt) =>{
     n.push(Math.floor(Math.random() * 20) + 1);
   }
   for (let i = 0; i < n.length; i++) {
-    newArrs.push(easy[n[i]]);
+    newArrs.push(easyData[n[i]]);
   }
   Myfunc(newArrs, elList);
   const myTimeout = setTimeout(myGreeting, 10000);
@@ -91,7 +91,7 @@ let num = 0;
 elList.addEventListener("click", (evt) => {
   evt.preventDefault();
   let elId = "";
-  easy.forEach((el, i) => {
+  easyData.forEach((el, i) => {
     if (evt.target.matches(`.${el.en}`)) {
       f = true;
       IdArr.push(evt.target.getAttribute("id"));
@@ -123,6 +123,6 @@ elList.addEventListener("click", (evt) => {
 
 
 
-elReloder.addEventListener("click" , ()=>{
-location.reload()
-})
+// elReloder.addEventListener("click" , ()=>{
+// location.reload()
+// })

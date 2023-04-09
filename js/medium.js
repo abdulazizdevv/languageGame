@@ -4,7 +4,7 @@ const elHard = document.querySelector(".js_hard");
 const easyStart = document.querySelector(".js-easyStart");
 const mediumStart = document.querySelector(".js-mediumStart");
 const hardStart = document.querySelector(".js-hardStart");
-const elList = document.querySelector(".js-lists");
+const elList = document.querySelector(".js-list");
 const elLevel = document.querySelector(".js_level");
 let elScore = document.querySelector(".js-score");
 const elStarter = document.querySelector(".js_starter")
@@ -67,11 +67,11 @@ let res = [];
 elStarter.addEventListener("click" , (evt) =>{
   evt.preventDefault()
   elStarter.classList.add("dn")
-  for (var i = 0; i < 6; i++) {
+  for (var i = 0; i < 8; i++) {
     n.push(Math.floor(Math.random() * 20) + 1);
   }
   for (let i = 0; i < n.length; i++) {
-    newArrs.push(medium[n[i]]);
+    newArrs.push(mediumData[n[i]]);
   }
   Myfunc(newArrs, elList);
   const myTimeout = setTimeout(myGreeting, 10000);
@@ -91,7 +91,7 @@ let num = 0;
 elList.addEventListener("click", (evt) => {
   evt.preventDefault();
   let elId = "";
-  easy.forEach((el, i) => {
+  mediumData.forEach((el, i) => {
     if (evt.target.matches(`.${el.en}`)) {
       f = true;
       IdArr.push(evt.target.getAttribute("id"));
@@ -116,12 +116,13 @@ elList.addEventListener("click", (evt) => {
   });
   elScore.textContent = num;
   elResult.textContent = ` ${num}  ta to'gri toptingiz  ${num >0 ? " ajoyib" :"O'z ustingizda ishlang " }` 
+  console.log(num);
   localStorage.setItem("record" , num)
 });
 
 
 
 
-elReloder.addEventListener("click" , ()=>{
-location.reload()
-})
+// elReloder.addEventListener("click" , ()=>{
+// location.reload()
+// })
