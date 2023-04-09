@@ -3,19 +3,20 @@ let elRecord = document.querySelector(".js-record");
 
 function renderPokemon(arr) {
   let res = "";
-
+let name = localStorage.getItem("user")
+console.log();
   for (i of arr) {
     console.log(i);
     res += `
         <table>
         <tr>
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Country</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Record</th>
         </tr>
         <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>${JSON.parse(name).name}</td>
+            <td>${JSON.parse(name).email}</td>
             <td>${i}</td>
         </tr>
     </table>
